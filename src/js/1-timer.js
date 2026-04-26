@@ -26,7 +26,6 @@ const input = document.querySelector('#datetime-picker');
 
 startBtn.disabled = true;
 
-// flatpickr
 flatpickr(input, {
   enableTime: true,
   time_24hr: true,
@@ -49,7 +48,6 @@ flatpickr(input, {
   },
 });
 
-// запуск таймера
 startBtn.addEventListener('click', () => {
   if (!selectedDate) return;
 
@@ -69,7 +67,6 @@ startBtn.addEventListener('click', () => {
   }, 1000);
 });
 
-// оновлення DOM
 function updateUI({ days, hours, minutes, seconds }) {
   daysEl.textContent = format(days);
   hoursEl.textContent = format(hours);

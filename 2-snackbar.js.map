@@ -1,0 +1,1 @@
+{"version":3,"file":"2-snackbar.js","sources":["../src/js/2-snackbar.js"],"sourcesContent":["import iziToast from \"izitoast\";\nimport \"izitoast/dist/css/iziToast.min.css\";\n\nconst form = document.querySelector(\".form\");\n"],"names":[],"mappings":"wEAGa,SAAS,cAAc,OAAO"}

@@ -58,10 +58,14 @@ startBtn.addEventListener('click', () => {
     const diff = selectedDate - new Date();
 
     if (diff <= 0) {
-      clearInterval(timerId);
-      updateUI({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-      return;
-    }
+  clearInterval(timerId);
+  updateUI({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
+  input.disabled = false;
+  startBtn.disabled = true;   
+
+  return;
+}
 
     updateUI(convertMs(diff));
   }, 1000);
